@@ -1,0 +1,232 @@
+/* main
+---------------------------------------------- */
+
+body {
+    font-family: Source Sans Pro,sans-serif;
+    font-size:10px;
+    padding:20px;
+}
+h1 {
+    margin:0px;
+}
+p {
+    margin:0px;
+}
+header {
+    margin-bottom:80px;
+}
+sidebar {
+    display:none;
+    position:absolute;
+    top:260px;
+    left:40px;
+    width:15%;
+    background-color:#f7f7f7;
+    border-radius:20px;
+}
+sidebar #undergraudate,
+sidebar #graduate {
+    display:none;
+}
+sidebar #undergraudate:active,
+sidebar #graduate:active {
+    display:block;
+}
+sidebar div div {
+    margin:15px 15px;
+    font-size:14px;
+}
+sidebar div div.section {
+    padding-bottom:10px;
+    font-weight:700;
+    border-bottom:1px solid #ccc;
+}
+sidebar div div.active {
+    margin-left:0px;
+    padding:10px;
+    font-weight:700;
+    border-left:5px solid #18c9b9;
+}
+sidebar div div.complete {
+    color:#ccc;
+}
+
+/* slides
+---------------------------------------------- */
+
+.slide {
+    display:none;
+    position:absolute;
+    top:260px;
+    left:20%;
+    right:8%;
+    bottom:0px;
+}
+/* .slide.active {
+    display:block;
+} */
+.slide .program_num {
+    display:none;
+}
+.slide h1 {
+    font-size:7.2em;
+    font-weight:700;
+    color:#9e1831;
+    margin-bottom:10px;
+}
+.slide .program {
+    font-size:3.6em;
+    font-weight: 300;
+    color:#b97f3b;
+    margin-bottom:30px;
+}
+.slide .program:after {
+    content: "";
+    display: block;
+    margin-bottom: 20px;
+    position: relative;
+    width: 90px;
+    height: 8px;
+    background-color: #18c9b9;
+    margin-top: 35px;
+    margin-left: 425px;
+}
+.slide .bar {
+    display:none;
+}
+.slide .message {
+    padding-right:100px;
+    margin-bottom:30px;
+    font-size:2em;
+    line-height:1.6em;
+    font-weight:300;
+    color:#333;
+}
+.slide .photo {
+    position:relative;
+    float:left;
+    margin-right:50px;
+    margin-bottom:200px;
+    border-radius:20px;
+    filter: drop-shadow(0 10px 25px rgba(0,0,0,.1));
+}
+.slide .ribbon {
+    display:inline-block;
+    margin-right:5px;
+}
+.slide .ribbon.print {
+    display:none;
+}
+
+.slide.blue,
+.slide.burgundy {
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+}
+.slide.blue {
+    background-color:#172245;
+}
+.slide.burgundy {
+    background-color:#aa1d40;
+}
+.slide.blue h1,
+.slide.burgundy h1 {
+    color:#fff;
+    text-align:center;
+    margin:15% 5% 0% 5%;
+    padding:5% 20%;
+}
+.slide.blue h1 {
+    border-top:10px solid #aa1d40;
+    border-bottom:10px solid #aa1d40;
+}
+.slide.burgundy h1 {
+    border-top:10px solid #d28f3f;
+    border-bottom:10px solid #d28f3f;
+}
+.accessibility_notice {
+    display:none;
+    position: absolute;
+    top: 65px;
+    right: 50px;
+    width: 40%;
+    padding: 20px 0px;
+    text-align: center;
+    background-color: #9e1831;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 300;
+    border-radius: 4px;
+}
+
+
+/* mobile styles
+---------------------------------------------- */
+@media only screen and (max-width: 768px) {
+    header img {
+        max-width:300px;
+    }
+    .slide {
+        top:150px;
+    }
+    .slide .photo {
+        position:relative;
+        float:none;
+        width:250px;
+        margin-right:50px;
+        margin-bottom:20px;
+        border-radius:20px;
+        filter: drop-shadow(0 10px 25px rgba(0,0,0,.1));
+    }
+    .slide h1 {
+        font-size:4em;
+    }
+    .slide .program {
+        font-size:2.4em;
+    }
+    .slide .program:after {
+        margin-left: 0px;
+    }
+}
+
+
+/* print styles
+---------------------------------------------- */
+@media print {
+    body {
+        page-break-before: avoid;
+        width:100%;
+        height:100%;
+        padding:0px;
+    }
+    * {
+        border:1px solid red;
+    }
+    header {
+        margin-bottom:20px;
+    }
+    header img {
+        width:50%;
+    }
+    #main {
+        padding:0px;
+        border:1px solid green;
+    }
+    .slide {
+        position:relative;
+        border:1px solid blue;
+    }
+    .slide .photo {
+        float:none;
+        display:inline-block;
+        width:200px;
+    }
+    .slide h1 {
+        font-size:24px;
+    }
+ }
+ @page {
+    size: A4 landscape;
+}
