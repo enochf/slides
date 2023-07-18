@@ -15,4 +15,9 @@ Once on the site, simply pressing the right arrow key will initiate the automati
 - HTML
 - CSS
 
+## Project Details
+
+- Year Built: 2020
+- Client: Colorado State University Global (CSU Global)
+
 See more work at [EnochFredericks.com](https://enochfredericks.com)
