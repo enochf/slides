@@ -6,4 +6,11 @@ The project includes custom code for generating automatic advancing slides for a
 
 Once on the site, simply pressing the right arrow key will initiate the automatic loading of each slide every 8 seconds (or other specified amount). The slides can then be puased and started again using the space bar. Pressing the tilde (~) key will toggle automatic advancement on and off.
 
+## Technology Stack
+
+- PHP
+- JavaScript
+- HTML
+- CSS
+
 See more work at [EnochFredericks.com](https://enochfredericks.com)
